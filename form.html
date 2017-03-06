@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:gs="http://www.gensee.com/ec" xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content = "IE=EmulateIE7,chrome=1">
+<meta name="language" content="zh-CN" />
+
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/diy.css">
+
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/lang/lang.zh_CN.js" type="text/javascript"></script>
+<script src="js/jquery.submit.js" type="text/javascript" ></script>
+<script src="js/jquery.pagination/jquery.pagination.js" type="text/javascript" ></script>
+<script src="js/main.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<title>表单管理</title>
+</head>
+<body>
+	<div class="header">
+		<div class="header_content clearfix">
+			<ul class="header_nav clearfix" id="j-header-nav">
+				<li class="items"><span class="nav_home" href="#">首页</span></li>
+				<li class="items"><span class="nav_budget" href="#">预算管理</span></li>
+				<li class="items"><span class="nav_budget2" href="#">经费管理</span></li>
+				<li class="items"><span class="nav_fund" href="#">资产管理</span></li>
+				<li class="items"><span class="nav_police" href="#">警务管理</span></li>
+				<li class="items"><span class="nav_car" href="#">车辆管理</span></li>
+				<li class="items"><span class="nav_warehouse" href="#">仓库管理</span></li>
+				<li class="items"><span class="nav_system" href="#">系统管理</span></li>
+			</ul>
+			<ul class="header_login clearfix">
+				<li class="header_user"><a class="header_login_user" href="#">史定波</a></li>
+				<li class="header_pwd"><a href="#">修改密码</a></li>
+				<li class="header_loginOut"><a href="#">退出</a></li>
+			</ul>
+		</div>
+	</div>
+ <!--表单内容-->
+ <div class="form_main">
+ 		<div class="form_main_content">
+ 				<div class="form_main_header clearfix">
+ 					<div class="btnRight">
+ 						<span class="deleteBtn">删除</span>
+	 					<span class="addBtn">新增</span>
+	 					<span class="searchBtn">搜索</span>
+	 					<div class="selectBox j-selectBox">
+	 							<p class="clearfix j-opW">
+	 								<span class="selectBox_show">类型</span>
+									<span class="selectBox_btn">^</span>
+	 							</p>
+	 							<ul class="selectBox_results j-opW">
+	 								<li class="items">类型2</li>
+	 								<li class="items">类型3</li>
+	 								<li class="items">类型4</li>
+	 							</ul>
+	 					</div>
+	 					<div class="selectBox j-selectBox">
+	 							<p class="clearfix j-opW">
+	 								<span class="selectBox_show">类型2</span>
+									<span class="selectBox_btn">^</span>
+	 							</p>
+	 							<ul class="selectBox_results j-opW">
+	 								<li class="items">类型2</li>
+	 								<li class="items">类型3</li>
+	 								<li class="items">类型4</li>
+	 							</ul>
+	 					</div>
+
+	 					<input class="searchName" type="text" value="名称" />
+ 					</div>
+					
+					<div class="title">流程列表</div>
+
+ 				</div>
+				<div class="form_main">
+				
+					<div class="grid-view">
+						<ul class="grid-row clearfix">
+								<li class="items grid_c0 j-JBSelect choose"></li>
+								<li class="items grid_c1 fontW700">序号</li>
+								<li class="items grid_c2 fontW700">表单编号</li>
+								<li class="items grid_c3 fontW700">表单名称</li>
+								<li class="items grid_c4 fontW700">表单类型</li>
+								<li class="items grid_c5 fontW700">备注</li>
+								<li class="items grid_c6 fontW700">状态</li>
+								<li class="items grid_c7 fontW700">操作</li>
+						</ul>
+
+						<ul class="grid-row clearfix">
+								<li class="items grid_c0 j-JBSelect  unchoose"></li>
+								<li class="items grid_c1">1</li>
+								<li class="items grid_c2 ">bd_p_0001</li>
+								<li class="items grid_c3">资产采购申请表</li>
+								<li class="items grid_c4">系统</li公用表>
+								<li class="items grid_c5 text-overflow">&nbsp;</li>
+								<li class="items grid_c6 c6_used">已使用</li>
+								<li class="items grid_c7">
+									<span class="c-edit" title="编辑">编辑</span>
+									<span class="c-copy" title="复制">复制</span>
+									<span class="c-view" title="查看">查看</span>
+									<span class="c-delete" title="删除">删除</span>
+								</li>
+						</ul>	
+						<ul class="grid-row clearfix">
+								<li class="items grid_c0 j-JBSelect  unchoose"></li>
+								<li class="items grid_c1">2</li>
+								<li class="items grid_c2 ">bd_p_0001</li>
+								<li class="items grid_c3">资产采购申请表</li>
+								<li class="items grid_c4">系统</li公用表>
+								<li class="items grid_c5 text-overflow">&nbsp;</li>
+								<li class="items grid_c6 c6_unused">未使用</li>
+								<li class="items grid_c7">&nbsp;</li>
+						</ul>
+						<ul class="grid-row clearfix">
+								<li class="items grid_c0 j-JBSelect choose"></li>
+								<li class="items grid_c1">3</li>
+								<li class="items grid_c2 ">bd_p_0001</li>
+								<li class="items grid_c3">资产采购申请表</li>
+								<li class="items grid_c4">系统</li公用表>
+								<li class="items grid_c5 text-overflow">&nbsp;</li>
+								<li class="items grid_c6 c6_used">已使用</li>
+								<li class="items grid_c7">&nbsp;</li>
+						</ul>	
+						<ul class="grid-row clearfix">
+								<li class="items grid_c0 j-JBSelect choose"></li>
+								<li class="items grid_c1">4</li>
+								<li class="items grid_c2 ">bd_p_0001</li>
+								<li class="items grid_c3">资产采购申请表</li>
+								<li class="items grid_c4">系统</li公用表>
+								<li class="items grid_c5 text-overflow">&nbsp;</li>
+								<li class="items grid_c6 c6_used">已启用</li>
+								<li class="items grid_c7"></li>
+						</ul>
+						<ul class="grid-row clearfix">
+								<li class="items grid_c0 j-JBSelect choose"></li>
+								<li class="items grid_c1">5</li>
+								<li class="items grid_c2 ">bd_p_0001</li>
+								<li class="items grid_c3">资产采购申请表</li>
+								<li class="items grid_c4">系统</li公用表>
+								<li class="items grid_c5 text-overflow">&nbsp;</li>
+								<li class="items grid_c6 c6_used">已启用</li>
+								<li class="items grid_c7"></li>
+						</ul>
+							
+
+
+					</div>
+				</div>
+
+				<div class="pagination">
+					
+
+				</div>
+ 		</div>
+
+ </div>
+	
+
+
+</body>
+</html>
